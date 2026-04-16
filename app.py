@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('financecore_clean.csv')
+df = pd.read_csv('c:/Users/user/Desktop/brief06/notebook/financecore_clean.csv')
 df['date_transaction'] = pd.to_datetime(df['date_transaction'])
 
 volume_total = df['montant_eur'].abs().sum()
