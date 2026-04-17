@@ -259,7 +259,7 @@ fig2 = px.bar(
 )
 st.plotly_chart(fig2, use_container_width=True)
 
-st.subheader("👥 Répartition des Clients par Segment")
+st.subheader(" Répartition des Clients par Segment")
 
 segment_data = df_filtered["segment_client"].value_counts().reset_index()
 segment_data.columns = ["segment_client", "count"]
